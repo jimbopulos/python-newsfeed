@@ -11,9 +11,9 @@ def create_app(test_config=None):
     SECRET_KEY='super_secret_key'
   )
 
-  @app.route('/hello')
-  def hello():
-    return 'hello world'
+  # @app.route('/hello')
+  # def hello():
+  #   return 'hello world'
 
   #register routes
   app.register_blueprint(home)
