@@ -22,8 +22,9 @@ def signup():
     db.add(newUser)
     db.commit()
   except:
-    # insert failed, so send error to front end
     print(sys.exc_info()[0])
+    # insert failed, so send error to front end
+    db.rollback()
     return jsonify(message = 'Signup failed'), 500
 
   return jsonify(id = newUser.id)
