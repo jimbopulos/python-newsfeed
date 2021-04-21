@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, session, redirect
 from app.models import Post
 from app.db import get_db
 
@@ -16,7 +16,8 @@ def index():
   )
   return render_template(
     'homepage.html',
-    posts=posts
+    posts=posts,
+    loggedIn=session.get('loggedIn')
   )
 
 @bp.route('/login')
@@ -32,5 +33,6 @@ def single(id):
   #render single post template
   return render_template(
     'single-post.html',
-    post=post
+    post=post,
+    loggedIn=session.get('loggedIn')
   )
