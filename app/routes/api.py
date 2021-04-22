@@ -78,3 +78,5 @@ def comment():
 
     db.rollback()
     return jsonify(message = 'Comment failed'), 500
+  
+  return jsonify(id = newComment.id)
