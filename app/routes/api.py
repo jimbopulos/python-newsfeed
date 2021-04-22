@@ -150,7 +150,7 @@ def delete(id):
 
   try:
     # delete post from db
-    db.delete(query(Post).filter(Post.id == id).one())
+    db.delete(db.query(Post).filter(Post.id == id).one())
     db.commit()
   except:
     print(sys.exc_info()[0])
