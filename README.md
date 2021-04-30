@@ -30,7 +30,12 @@ Then:
 - Posts feed accessed via `Just Tech News` button in the navbar
   - From here: click on a post's title to follow the attached link, comment by clicking the `X comment(s)` button, or show some love and validation with `upvote`
 
+> Dashboard
+
 ![just-tech-news-dashboard](app/images/just-tech-news-dashboard.png)
+
+> Posts feed
+
 ![just-tech-news-feed](app/images/just-tech-news-feed.png)
 
 ## Technologies
