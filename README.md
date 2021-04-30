@@ -25,7 +25,7 @@ Navigate the deployed Heroku URL to begin.
 Then:
 
 - Dashboard (default page on login):
-  - `Create` a post with a `Title` and `Link` to a journal or article's external URL
+  - `Create` a post with a `Title` and `Link` to a journal or article's external URL | **NOTE** URL must include full span (http:// or https:// etc...) -- it's best to copy and paste from your searchbar
   - `Delete post` or `Save post` with new changes by clicking `Edit post`
 - Posts feed accessed via `Just Tech News` button in the navbar
   - From here: click on a post's title to follow the attached link, comment by clicking the `X comment(s)` button, or show some love and validation with `upvote`
