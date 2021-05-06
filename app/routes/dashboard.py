@@ -34,4 +34,4 @@ def edit(id):
     'edit-post.html',
     post=post,
     loggedIn=session.get('loggedIn')
-    )
+  )
