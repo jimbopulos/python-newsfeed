@@ -145,7 +145,7 @@ def update(id):
     print(sys.exc_info()[0])
 
     db.rollback()
-    return jsonify(message = 'Post not found'), 400
+    return jsonify(message = 'Post not found'), 404
 
   return '', 204
 
@@ -162,6 +162,6 @@ def delete(id):
     print(sys.exc_info()[0])
 
     db.rollback()
-    return jsonify(message = 'Post not found'), 400
+    return jsonify(message = 'Post not found'), 404
 
   return '', 204
